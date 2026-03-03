@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rugby School Costume and Prop Booking</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        margin: 0;
+        background-color: #f4f6f9;
+    }
+
+    header {
+        background-color: #0b1f3a;
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .crest {
+        width: 100px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        background-color: #13294b;
+        text-align: center;
+        padding: 12px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 15px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .form-container {
+        max-width: 750px;
+        margin: auto;
+        background: white;
+        padding: 35px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        text-align: center;
+        color: #0b1f3a;
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+        color: #0b1f3a;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    button {
+        margin-top: 25px;
+        background-color: #0b1f3a;
+        color: white;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: #13294b;
+    }
+
+    .contact {
+        background-color: #0b1f3a;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+        background-color: #13294b;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Rugby School Costume and Prop Booking</h1>
+    <p>Formal Request Submission Portal</p>
+</header>
+
+<nav>
+    <a href="#booking">Booking Form</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="booking">
+    <div class="form-container">
+        <h2>Costume and Prop Booking Request Form</h2>
+
+        <!-- FormSubmit sends form results to email automatically -->
+        <form action="https://formsubmit.co/mls@rugbyschool.net" method="POST">
+
+            <!-- Disable captcha (optional) -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Subject line for email -->
+            <input type="hidden" name="_subject" value="New Costume & Prop Booking Request">
+
+            <label>Name of Student</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Email Address of Student</label>
+            <input type="email" name="Student Email" required>
+
+            <label>Date Required</label>
+            <input type="date" name="Date Required" required>
+
+            <label>Event Name</label>
+            <input type="text" name="Event Name" required>
+
+            <label>Venue of Event</label>
+            <input type="text" name="Venue" required>
+
+            <label>Name of Teacher Hosting Event</label>
+            <input type="text" name="Teacher" required>
+
+            <label>Clothing Size</label>
+            <select name="Clothing Size" required>
+                <option value="">Select Size</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+
+            <label>Shoe Size (UK)</label>
+            <input type="text" name="Shoe Size" required>
+
+            <label>Details of Costume Required</label>
+            <textarea name="Costume Details" required></textarea>
+
+            <label>Details of Prop Required</label>
+            <textarea name="Prop Details"></textarea>
+
+            <label>Any Other Relevant Information</label>
+            <textarea name="Additional Information"></textarea>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: mls@rugbyschool.net</p>
+</section>
+
+<footer>
+    © 2026 Rugby School Costume and Prop Booking
+</footer>
+
+</body>
+</html>
